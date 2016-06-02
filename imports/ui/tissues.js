@@ -33,9 +33,7 @@ Template.tissues.events({
     const text = target.text.value;
 
     // Insert a task into the collection
-    Tissues.insert({
-      text
-    });
+    Meteor.call('tissues.insert', text);
 
     // Clear form
     target.text.value = '';
