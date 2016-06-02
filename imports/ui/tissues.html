@@ -1,0 +1,29 @@
+<template name="tissues">
+  <div class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h4 class="modal-title">Select Tissues</h4>
+                </div>
+
+                <div class="modal-body">
+                  <ul>
+                    {{#each tissues}}
+                      {{> tissue}}
+                    {{/each}}
+                  </ul>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</template>
+
+<template name="tissue">
+  <li>{{text}}</li>
+</template>

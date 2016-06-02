@@ -1,0 +1,17 @@
+<template name="assays">
+  <div>
+    <header>
+      <h1>Assay Categories</h1>
+    </header>
+
+    <ul>
+      {{#each assays}}
+        {{> assay}}
+      {{/each}}
+    </ul>
+  </div>
+</template>
+
+<template name="assay">
+  <li>{{text}}</li>
+</template>
