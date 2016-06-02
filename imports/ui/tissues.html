@@ -4,7 +4,16 @@
             <div class="modal-content">
 
                 <div class="modal-header">
-                    <h4 class="modal-title">Select Tissues</h4>
+                    <h4 class="modal-title">Select Tissues({{tissueCount}})</h4>
+
+                    <label class="hide-completed">
+                      <input type="checkbox" />
+                      Hide Selected Tissues
+                    </label>
+
+                    <form class="new-task new-tissue">
+                     <input type="text" name="text" placeholder="Type to add new tissues" />
+                    </form>
                 </div>
 
                 <div class="modal-body">
@@ -22,8 +31,4 @@
             </div>
         </div>
     </div>
-</template>
-
-<template name="tissue">
-  <li>{{text}}</li>
 </template>

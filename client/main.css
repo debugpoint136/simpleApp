@@ -103,16 +103,16 @@ li.checked {
   color: #888;
 }
 
-li.checked .text {
+/*li.checked .text {
   text-decoration: line-through;
-}
+}*/
 
 li.private {
   background: #eee;
   border-color: #ddd;
 }
 
-header .hide-completed {
+.hide-completed {
   float: right;
 }
 
